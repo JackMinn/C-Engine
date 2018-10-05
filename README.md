@@ -11,7 +11,9 @@ DirectX shader reflection API is used to dynamically read shaders and setup all 
 is not required per shader.
 
 A skybox is supported, and there is a tool that reads the skybox cubemap and produces an Irradiance Map and its respective Spherical 
-Harmonics, passing those into shaders for Ambient Lighting computations.
+Harmonics, passing those into shaders for Ambient Lighting computations. The tool works by projecting the environment map on the spherical
+harmonics. This works by taking the inner product of the environment map with 9 spherical harmonic basis functions, where the inner
+product is an integral over the measure of solid angle.
 
 Current shaders support Lambertian Diffuse and Specular. The specular component for now is only with the Skybox, as the scene does not have
 any directional lighting. The specular component is used to determine which Mip level of the skybox cubemap to sample, such that more
