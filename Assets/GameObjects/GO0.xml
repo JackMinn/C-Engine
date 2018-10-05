@@ -1,0 +1,3 @@
+<Root>
+    <RenderableComponent Material="MyMaterial" Model="MyModel"/>
+</Root>
