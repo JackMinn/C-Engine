@@ -22,8 +22,6 @@ rough materials sample a lower Mip and result in blurrier reflections.
 The constant buffers in the shaders are layed out in a way that is performant, with a per application/per frame/per draw and $globals 
 cbuffers each with a different frequency of updating based on their data.
 
-NOTE:
-This currently does not boot from the .exe, it loads and immediately closes. It only boots when executed through visual studio. I will soon look into this, but I didnt realize until recently and havent had time. 
 
 ![My image](Engine1.png)
 
